@@ -11,7 +11,7 @@ export class SignInPage {
         this.page = page
         this.cnc_username = page.locator('//input[@id="j_username"]')
         this.cnc_password = page.locator('//input[@id="j_password"]')
-        this.submit_btn = page.locator('//input[@id="authenticationform-submit"]')
+        this.submit_btn = page.locator('//input[@id="authenticationform-submit-widget"]')
         this.user_label = page.locator('//li[@class="headerUserReginfo"]')
     }
 

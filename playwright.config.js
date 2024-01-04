@@ -24,6 +24,12 @@ module.exports = defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    headless: true,
+        viewport:{width : 1280,height : 720},
+        actionTimeout:15000,
+        ignoreHTTPSErrors:true,
+        video:"retain-on-failure",
+        screenshot:"only-on-failure",
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 
