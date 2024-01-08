@@ -13,6 +13,6 @@ export class HomePage {
 //  Methods to use 
 async navigateToUrl(){
             await this.page.goto('https://agi-hylt.gcom.grainger.com/en')
-            
+            await this.page.waitForTimeout(6000)
         }
 }
